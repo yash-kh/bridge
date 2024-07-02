@@ -1,5 +1,5 @@
 const localBaseURL = "http://localhost:5000/api";
-const productionBaseURL = "https://api.xy.fi/api";
+const productionBaseURL = "https://bridge-backend-8p3p.onrender.com/api";
 export const baseURL =
   process.env.NODE_ENV === "production" ? productionBaseURL : localBaseURL;
 
