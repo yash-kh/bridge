@@ -1,7 +1,8 @@
 import axios from 'axios';
+import { baseURL } from '../constants/APIConstants';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:5000/api', // Update with the deployed backend URL in production
+  baseURL,
 });
 
 export default axiosInstance;
