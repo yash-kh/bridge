@@ -10,6 +10,10 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cors());
 
+app.get('/api', (req, res) => {
+  res.send('React App Backend');
+});
+
 // Routes
 app.use('/api/tokens', tokenRoutes);
 app.use('/api/quotes', quoteRoutes);
